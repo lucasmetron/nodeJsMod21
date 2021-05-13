@@ -1,13 +1,17 @@
-let calc = {
-    mult: function (x, y) {
-        return x * y;
-    },
-    soma: (x, y) => {
-        return x + y;
-    },
-
-    erro: "Opção inválida"
+module.exports.sub = (x, y) => {
+    return x - y;
 }
 
+module.exports.soma = function (x, y) {
+    return x + y;
+}
 
-module.exports = calc;
+module.exports.div = (x, y) => {
+    return x / y;
+}
+
+module.exports.mult = function (x, y) {
+    return x * y;
+}
+
+module.exports.erro = "Opção inválida"
