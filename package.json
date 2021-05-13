@@ -1,0 +1,19 @@
+{
+  "name": "matematica",
+  "version": "1.0.0",
+  "description": "Funcões matematicas",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasmetron/nodeJsMod21.git"
+  },
+  "author": "Lucas Rosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasmetron/nodeJsMod21/issues"
+  },
+  "homepage": "https://github.com/lucasmetron/nodeJsMod21#readme"
+}
