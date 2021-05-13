@@ -18,7 +18,7 @@ else if (op === "deletar") {
     ops.delet(fileName)
 }
 
-else if (op === "inserir") {
+else if (op === "alterar") {
     ops.inserir(fileName, fileContent)
 }
 
