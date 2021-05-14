@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lucasmetron/nodeJsMod21/issues"
   },
-  "homepage": "https://github.com/lucasmetron/nodeJsMod21#readme"
+  "homepage": "https://github.com/lucasmetron/nodeJsMod21#readme",
+  "dependencies": {
+    "teste": "file:../testeFuncNode"
+  }
 }
