@@ -5,7 +5,12 @@ const fs = require('fs')
 http.createServer((request, response) => {
 
     let path = url.parse(request.url).pathname;
+    if (path == "" || path == "/") { //caso não seja digitado a página especifica, redireciona para a index
+        path = "/index.html"
+    }
     let fileName = "." + path;
+
+
 
     fs.readFile(fileName, (erro, data) => {
         if (erro) {
