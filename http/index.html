@@ -9,7 +9,63 @@
 </head>
 
 <body>
-    <h1>Index</h1>
+    <button onclick="get()">Get</button>
+    <button onclick="post()">Post</button>
+    <button onclick="put()">Put</button>
+    <button onclick="del()">Delete</button>
+
+
+    <script>
+
+        let url = "http://localhost:3000/teste"
+
+        function get() {
+
+            fetch(url, {
+                method: "get"
+            }).then(res => {
+                console.log(res)
+            }).catch(erro => {
+                console.log(erro)
+            })
+        }
+
+        function post() {
+
+            fetch(url, {
+                method: "post"
+            }).then(res => {
+                console.log(res)
+            }).catch(erro => {
+                console.log(erro)
+            })
+
+        }
+
+        function put() {
+
+            fetch(url, {
+                method: "put"
+            }).then(res => {
+                console.log(res)
+            }).catch(erro => {
+                console.log(erro)
+            })
+
+        }
+
+        function del() {
+
+            fetch(url, {
+                method: "delete"
+            }).then(res => {
+                console.log(res)
+            }).catch(erro => {
+                console.log(erro)
+            })
+
+        }
+    </script>
 </body>
 
 </html>

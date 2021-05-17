@@ -2,7 +2,6 @@ const http = require('http');
 const url = require('url');
 const fs = require('fs')
 
-
 function handleFile(req, res, callback) {
 
     let path = url.parse(req.url).pathname;
@@ -27,9 +26,15 @@ function handleFile(req, res, callback) {
     })
 }
 
-
 function handleRequest(req, res) {
     let path = url.parse(req.url).pathname;
+    let metodo = req.method;
+
+    console.log(metodo)
+
+    if (metodo == "PUT") {
+        response.writeHead(404, { "Content-Type": "text/html; charset=utf8" })
+    }
 
     if (path == "/teste") {
         res.end("teste")
@@ -38,7 +43,6 @@ function handleRequest(req, res) {
 
     return false;
 }
-
 
 http.createServer((request, response) => {
 
