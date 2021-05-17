@@ -10,3 +10,4 @@ let calc = {
 module.exports = { ...operacoesBasicas, ...areas }
 
 console.log(operacoesBasicas.mult(5, 9))
+
